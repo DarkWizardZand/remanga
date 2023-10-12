@@ -1,9 +1,9 @@
-import 'package:dno/models/tokens/tokens.dart';
+
 import 'package:flutter/material.dart';
 
 import '../auth/text_login.dart';
 import '../auth/text_password.dart';
-import '../dialogs/dialogs.dart';
+
 
 class Register extends StatefulWidget {
   const Register({super.key, required this.title});
@@ -43,10 +43,8 @@ Widget build(BuildContext context) {
                           if (taxPassword.text == taxRepeatPassword.text) {
                             Navigator.of(context).pushReplacementNamed("/home");
                           } else {
-                            errorBuilder(context,"Error","Не совродают пароли");
-                          }
-                        },
-                      child: const Text("Регистрация"))
+                          }},
+                      child: const Text("Регистрация")),
                     )
                   ]
                 ),

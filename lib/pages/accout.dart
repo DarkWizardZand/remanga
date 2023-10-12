@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../dialogs/dialogs.dart';
 
 class Account extends StatefulWidget {
   const Account({super.key, required this.title});
@@ -33,7 +32,7 @@ Widget build(BuildContext context) {
                   SizedBox(
                     child:TextButton(
                       onPressed: () {
-                        DialogRouting(context,"/login");
+
                         },
                       child: const Text("Выход из аккаунта"),
                     ),

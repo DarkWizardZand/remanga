@@ -10,9 +10,14 @@ class TextLogin extends StatelessWidget {
       height: 70,
       child: TextField(
         controller:tax,
-        decoration: const InputDecoration(
-          border: OutlineInputBorder(),
-          labelText: 'Почта или никнейм',
+        style:const TextStyle(color:  Colors.white),
+        decoration:InputDecoration(
+          enabledBorder: OutlineInputBorder(borderRadius:BorderRadius.circular(30.0),borderSide: BorderSide.none ),
+          focusedBorder: OutlineInputBorder(borderRadius:BorderRadius.circular(30.0),borderSide: const BorderSide(color: Colors.blue, width: 2) ),
+          filled: true,
+          fillColor: const Color.fromARGB(255,30,31,35),
+          hintText: 'Почта или никнейм',
+          hintStyle: const TextStyle(color:  Color.fromARGB(255,114,117,122)),
         ),
         
       ),

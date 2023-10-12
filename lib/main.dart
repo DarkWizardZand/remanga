@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'pages/register.dart';
 import 'pages/login.dart';
 import 'pages/accout.dart';
 
@@ -24,7 +23,6 @@ class MyApp extends StatelessWidget {
         '/':(context) => const Login(title: 'Авторизация'),
         '/login':(context) => const Login(title: 'Авторизация'),
         '/home':(context) => const MyHomePage(title: 'dno chaos'),
-        '/register':(context) => const Register(title: 'Регистрация'),
         '/account':(context) => const Account(title: 'Личный кабинет'),
       }
     );
